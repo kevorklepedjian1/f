@@ -1,4 +1,4 @@
-
+import React from "react";
 import { useFormik } from "formik";
 
 interface FormValues {
@@ -42,7 +42,7 @@ function App(): JSX.Element {
       password: "",
     },
     validate,
-    onSubmit: (values: FormValues) => {
+    onSubmit: () => {
       alert("Form successfully submitted");
     },
   });
